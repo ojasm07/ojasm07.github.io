@@ -121,7 +121,7 @@
 											<span class="image"><img src="images/upenn logo.png" width = "170" height = "auto" style = "margin-left: -25px" alt="" /></span>
 											<div class="content">												
 												<h3>Graduate Teaching Assistant</h3>
-												<span class="education-date"><h5 style="float: right"> May 2023 - Aug 2023</h5></span>
+												<span class="education-date"><h5 style="float: right"> May 2023 - Aug 2023 </br> Jan 2024 - May 2024 </h5></span>
 												<h4>University of Pennsylvania</h4>
 												<p>Conducted office hours to assist students in debugging their projects and assignments.</br>
 													Conducted one-to-one sessions with students to assist students with coding concepts used in projects and assignments.</p>
@@ -173,29 +173,82 @@
 									<div class="posts">
 										<article>
 											<!-- <a href="" class="image"><img src="images/human emotion.jfif" height = "300" alt="" /></a> -->
+											<div class="image"><img src="" height = "300" alt="" /></div>
+											<h3>BEV Semantic Segmentation System</h3>
+											<p>Developed IPM-based system to obtain BEV images from multi-view camera images segmented semantically by building a Segformer pipeline. Implemented a U-Net architecture featuring homography-enabled Transformers with a multi-input encoder-decoder
+												framework & achieved a 55.31% MIoU</p>											
+										<ul class="actions">                         
+												<li><a href="">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/BEV.pdf">Report</a></li>
+
+											</ul>
+										</article>
+										<article>
+											<!-- <a href="" class="image"><img src="images/human emotion.jfif" height = "300" alt="" /></a> -->
+											<div class="image"><img src="" height = "300" alt="" /></div>
+											<h3>Text-driven dynamic virtual background</h3>
+											<p>Implemented a Stable diffusion based Text2Scene pipeline, achieving a 67 % improvement in consistent scene generation &
+												generated panoramic images with photo realism rated at 8/10. Optimized the Neural Radiance Fields (NeRF) pipeline by introducing cross-patch attention mechanisms resulting in 12.8%
+												increase in FID score</p>
+											<ul class="actions">                         
+												<li><a href="">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/Virtual_background.pdf">Report</a></li>											</ul>
+										</article>
+										<article>
+											<!-- <a href="" class="image"><img src="images/human emotion.jfif" height = "300" alt="" /></a> -->
+											<div class="image"><img src="" height = "300" alt="" /></div>
+											<h3>Image Segmentation and Object Detection</h3>
+											<p>SOLO: Implemented end-to-end instance segmentation pipeline from: ’Segmenting Objects by Location’ to classify and
+												generate masks for 3 categories (Vehicles, People, Animal) on COCO dataset.</break>
+												<ul class="actions">                         
+													<li><a href="https://github.com/ojasm07/SOLO">Code</a></li>
+													<li><a href="">Video</a></li>
+													<li><a href="">Report</a></li>											</ul>
+											<p>YOLO: Implemented network from: ’YOLO: Real-Time Object Detection’ to predict bounding boxes over 3 categories.
+												Found location of object and classified using semantic labels. (mAP = 0.74)</break>
+												<ul class="actions">                         
+													<li><a href="https://github.com/ojasm07/YOLO_-Anchor-Based-">Code</a></li>
+													<li><a href="">Video</a></li>
+													<li><a href="">Report</a></li>											</ul>
+											<p>SegFormer: Implemented the SegFormer-BO from: ’SegFormer’ that combines transformers with lightweight multilayer
+												perceptron (MLP) decoders to segment semantically over 3 distinct categories, achieving a 0.35 MIoU</p>
+											<ul class="actions">                         
+												<li><a href="https://github.com/ojasm07/SegFormer">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="">Report</a></li>											</ul>
+										</article>
+										<article>
+											<!-- <a href="" class="image"><img src="" height = "300" alt="" /></a> -->
+											<div class="image"><img src="images/ukf.png" height = "300" alt="" /></div>
+											<h3>Localization and Estimation</h3>
+											<p>Developed a Quaternion-based Unscented Kalman Filter (UKF) to track 3D orientation using IMU data
+												Integrated the inertial orientation and odometry with a 2D LIDAR scan to localize the robot using Particle Filter to build the occupancy grid map.</p>
+											<ul class="actions">
+												<li><a href="">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="">Report</a></li>											</ul>
+										</article>
+										<article>
+											<!-- <a href="" class="image"><img src="images/human emotion.jfif" height = "300" alt="" /></a> -->
 											<div class="image"><img src="images/meam620_final.gif" height = "300" alt="" /></div>
 											<h3>Autonomous VIO-based Quadrotor</h3>
 											<p>Implemented Dijkstra and A* algorithms to compute a collision-free trajectory in a 3D environment and developed a nonlinear geometric controller to stabilize the quadrotor. Built an Error State Kalman Filter (ESKF) for pose estimation of the quadrotor using IMU and stereo pair sensors.</p>
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="">Report</a></li>											</ul>
 										</article>
-										<article>
-											<div class="image"><img src="images/humanoid.jpeg" height = "300" alt="" /></div>
-											<h3>SLAM on Humanoid</h3>
-											<p>Implemented a Quaternion-based Unscented Kalman Filter (UKF) to track 3D orientation using Gyroscope and Accelerometer data (IMU).
-												Integrated the inertial orientation and odometry with a 2D LIDAR scan, localizing the robot using Particle Filter to build the occupancy grid map.</p>
-											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
-										</article>
+										
 										<article>
 											<div class="image"><img src="images/520_final.gif" height = "300" alt="" /></div>
 											<h3>Robotic Gripper Arm</h3>
 											<p>Developed a software algorithm for a robotic Franka Emika Panda Arm using forward and inverse kinematics, object detection and identification (AprilTags), pose estimation and obstacle avoidance to stack static and dynamic blocks. Tested the algorithm in simulation environment (Gazebo) as well as on the Franka Emika Panda</p>
 												<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+													<li><a href="https://github.com/ojasm07/MEAM520">Code</a></li>
+													<li><a href="">Video</a></li>
+													<li><a href="">Report</a></li>											</ul>
 										</article>
 										
 										<article>
@@ -204,16 +257,18 @@
 											<h3>Applying Filters based on Human Emotion</h3>
 											<p>Trained a deep neural network model (CNN) for real-time emotion recognition in PyTorch. Performed Image processing on FER-2013 dataset and trained the model to perform Image classification based on emotions. Developed an algorithm to perform face detection using OpenCV and apply filters to the detected face based on emotions.</p>
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="https://github.com/ojasm07/Applying-Filters-based-on-Human-Emotion">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/3d.png" height = "300" alt="" /></div>
 											<h3>3D Reconstruction From Multi-View Images</h3>
 											<p>Performed SIFT for feature matching and used RANSAC for robust camera pose estimation. Computed a 3D point cloud from images using Structure from Motion and Bundle adjustment</p>											<ul class="actions">
 											<ul class="actions">	
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="https://github.com/ojasm07/3D-Reconstruction">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/3d.docx">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/orni.gif" height = "300" alt="" /></div>
@@ -221,8 +276,9 @@
 											<p>The robot mimicked the motion of a bird, was controlled wirelessly using a radio frequency module and had a 100m range. Manufactured an efficient gearbox and a lightweight aerodynamic robot body and designed test setups to measure the
 												dynamic thrust and lift force to check the flight stability.</p>											<ul class="actions">
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="https://github.com/ojasm07/Design-Control-and-Fabrication-of-Ornithopter">Code </a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/Ornithopter.docx">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/pic06.jpg" height = "300" alt="" /></div>
@@ -230,8 +286,9 @@
 											<p>Designed and manufactured a BLDC Propeller System to produce required reverse thrust to hold the robot on a wall of any inclination. A steering and suspension system were also incorporated.
 											Propeller system was controlled using Arduino UNO, IMU accelerometer and servo motors.</p>											<ul class="actions">
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/Wall_climbing.pptx">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/amphi.png" height = "300" alt="" /></div>
@@ -239,8 +296,9 @@
 											<p>Designed and modeled an undulating mechanism, mimicking a stingray fish, to perform locomotion.
 											Simulated the undulating mechanism (fin) in Fluid-Structure Interaction to find forward propulsion of robot and performed CFD analysis for hydrodynamic design optimization in COMSOL Multiphysics software.</p>
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/Amphibious.docx">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/stock.png" height = "300" alt="" /></div>
@@ -248,8 +306,9 @@
 											<p>Developed a LSTM model for time series forecasting by taking multiple sets of market and technical indicators as features. 
 												Visualized the results using matplotlib, optimized the model and minimized the prediction error within a range of +/-1.5</p>											<ul class="actions">
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="https://github.com/ojasm07/Stock-Market-Prediction-using-LSTM-model">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/Stock_lstm.docx">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/security.png" height = "300" alt="" /></div>
@@ -257,8 +316,9 @@
 											<p>Designed and developed an economical, contactless sanitization and employee identification security system.
 											The system made use of proximity sensor, IR sensor and RFID. The data was stored in Google Sheets using NodeMCU</p>											<ul class="actions">
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="https://github.com/ojasm07/Security-System-using-RFID-Temperature-Sensing-with-Sanitizer-Dispenser">Code</a></li>
+												<li><a href="">Video</a></li>
+												<li><a href="images/Security_system.docx">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/text analysis.jfif" height = "300" alt="" /></div>
@@ -267,8 +327,9 @@
 												The model used the NLTK library to perform Natural Language Processing based techniques-tokenization, lemmatization for data preprocessing, and TF-IDF Vectorization for Feature Engineering.
 												Built a classifier using Naive Bayes, SVM, and Decision tree algorithms and evaluated it using F-1 score.</p>											<ul class="actions">
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
-											</ul>
+												<li><a href="">Code</a></li>
+												
+												<li><a href="">Report</a></li>											</ul>
 										</article>
 										<article>
 											<div class="image"><img src="images/movie_recommender_system.png" height = "300" alt="" /></div>
@@ -276,7 +337,9 @@
 											<p>The recommender system recommended movies based on demographic, content-based and collaborative filtering using cosine similarity and linear kernel for measuring similarity.
 											 It used single value decomposition (SVD) for dimension reduction and accuracy of the system was 0.89, measured using RMSE.</p>											<ul class="actions">
 											<ul class="actions">
-												<!-- <li><a href="#" class="button">More</a></li> -->
+												<li><a href="https://github.com/ojasm07/Movie-Recommender-System">Code</a></li>
+												<!-- <li><a href="">Video</a></li>
+												<li><a href="">Report</a></li>	-->										
 											</ul>
 										</article>
 									</div>
@@ -364,7 +427,8 @@
 										<li><a href="images/Ojas_Ajitkumar_Mandlecha_Resume.pdf">Resume</a></li>
 										<li><a href="#education">Education</a></li>
 										<li><a href="#experience">Experience</a></li>
-										<li><a href="#projects">Projects</a></li>
+										<li><a href="#projects" >Projects</a>
+											
 										<!-- <li>
 											<span class="opener">Submenu</span>
 											<ul>
